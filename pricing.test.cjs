@@ -8,7 +8,7 @@ for(const year of [2027,2028,2030]){
  for(const [date,column] of [['04-19',1],['04-20',0],['10-10',0],['10-11',1],['01-01',1],['12-31',1]]){
   for(let hours=8;hours<=13;hours++)equal(P.quote('full',`${year}-${date}`,hours).amount,prices[hours][column]);
   for(const hours of [8,13]){
-   equal(P.quote('mini',`${year}-${date}`,hours),{packageId:'mini',date:`${year}-${date}`,hours:2,amount:99000});
+   equal(P.quote('mini',`${year}-${date}`,hours),{packageId:'mini',date:`${year}-${date}`,hours:3,amount:99000});
    equal(P.quote('premium',`${year}-${date}`,hours),{packageId:'premium',date:`${year}-${date}`,hours:13,amount:399000});
   }
  }

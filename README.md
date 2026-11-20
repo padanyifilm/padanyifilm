@@ -32,7 +32,7 @@ Ez helyi előnézet, nincs publikálva, a DNS nem változott.
 
 ## Jóváhagyott számítás (belső dokumentáció)
 
-Mini: 99 000 Ft, 2 óra. Prémium: 399 000 Ft, 13 óra és külön napi kreatív forgatás. Ezekre nincs szezonális vagy óraszám szerinti ármódosítás.
+Mini: 99 000 Ft, 3 óra. Prémium: 399 000 Ft, 13 óra és külön napi kreatív forgatás. Ezekre nincs szezonális vagy óraszám szerinti ármódosítás.
 
 Teljes: április 20.–október 10. között (határnapokkal együtt) 249 000 Ft; más dátumokon 199 000 Ft, 13 órára. Minden elhagyott óra 8 000 Ft, minimum 8 óra. A szezonbesorolás és az árcsökkentés magyarázata nem jelenik meg az oldalon. Dátumellenőrzés naptári számokkal, a mai nap meghatározása Europe/Budapest időzónában.
 

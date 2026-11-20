@@ -2,9 +2,9 @@
   'use strict';
   // Shared source for public cards, calculator and submitted quotations.
   var packages = [
-    { id:'mini', price:99000, hours:2, name:{hu:'Mini',en:'Mini'}, badge:{hu:'Rövidebb esküvőkhöz',en:'Shorter celebrations'},
+    { id:'mini', price:99000, hours:3, name:{hu:'Mini',en:'Mini'}, badge:{hu:'Rövidebb esküvőkhöz',en:'Shorter celebrations'},
       summary:{hu:'Ha a szertartást és a körülötte zajló eseményeket szeretnétek filmen visszanézni.',en:'For couples who want a film of the ceremony and the moments around it.'},
-      features:{hu:['Szertartások rögzítése','2 óra rendelkezésre állás','3–4 perces highlight rövidfilm','40+ perces összefoglaló film'],en:['Ceremony coverage','2 hours of coverage','3–4 minute highlight film','40+ minute extended film']} },
+      features:{hu:['Szertartások rögzítése','3 óra rendelkezésre állás','3–4 perces highlight rövidfilm','40+ perces összefoglaló film'],en:['Ceremony coverage','3 hours of coverage','3–4 minute highlight film','40+ minute extended film']} },
     { id:'full', price:249000, hours:13, name:{hu:'Teljes',en:'Full'}, badge:{hu:'Egész napra',en:'Full-day coverage'},
       summary:{hu:'A készülődéstől az esti programokig. Rövidfilm a hangulatról, hosszúfilm a fontos eseményekkel.',en:'From getting ready to the evening celebrations. A highlight film to share and an extended film with the key events.'},
       features:{hu:['Teljes esküvői nap rögzítése','13 óra rendelkezésre állás','Drónfelvételek készítése','5–7 perces highlight rövidfilm','90+ perces összefoglaló film'],en:['Full wedding day coverage','13 hours of coverage','Drone footage','5–7 minute highlight film','90+ minute extended film']} },

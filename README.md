@@ -41,3 +41,5 @@ Teljes: április 20.–október 10. között (határnapokkal együtt) 249 000 Ft
 `node padanyifilm/pricing.test.cjs`: 199 ellenőrzés, minden óraszám, szezonhatárok több évben, Mini/Prémium változatlan árazás, hibás és múltbeli dátumok. Budapest, Honolulu és Kiritimati időzónával is futtatva.
 
 `node padanyifilm/form-submit.test.cjs`: 8 szimulált beküldési eset két nyelven, sikeres szerverválasz, visszautasítás, hálózati hiba és hibás JSON. Nem küld valódi levelet. Valódi kézbesítési próba élesítés előtt szükséges.
+
+

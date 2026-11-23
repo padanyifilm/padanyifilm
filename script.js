@@ -1,6 +1,6 @@
 /* =========================================================
-   ERONNVIDEO.HU — script.js
-   Cookie consent + Facebook iframe reveal + Formspree submit
+   Padányifilm — script.js
+   Navigation + Formspree submit + FAQ
    ========================================================= */
 
 (function () {
@@ -22,80 +22,6 @@
       }
     });
   });
-
-  /* ---------- COOKIE CONSENT ---------- */
-  var COOKIE_KEY = 'padanyifilm_fb_consent';
-  var banner = document.getElementById('cookieBanner');
-
-  function getConsent() {
-    try {
-      return localStorage.getItem(COOKIE_KEY);
-    } catch (e) {
-      return null;
-    }
-  }
-
-  function setConsent(value) {
-    try {
-      localStorage.setItem(COOKIE_KEY, value);
-    } catch (e) {
-      /* ignore */
-    }
-  }
-
-  function loadFacebookIframes() {
-    document.querySelectorAll('.review-card').forEach(function (card) {
-      var src = card.getAttribute('data-fb-src');
-      if (!src) return;
-      var placeholder = card.querySelector('.review-placeholder');
-      if (placeholder) placeholder.remove();
-      if (card.querySelector('iframe')) return;
-
-      var iframe = document.createElement('iframe');
-      iframe.className = 'review-frame';
-      iframe.setAttribute('src', src);
-      iframe.setAttribute('scrolling', 'no');
-      iframe.setAttribute('loading', 'lazy');
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute(
-        'allow',
-        'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'
-      );
-      card.appendChild(iframe);
-    });
-  }
-
-  function showBanner() {
-    if (banner) banner.classList.add('show');
-  }
-
-  function hideBanner() {
-    if (banner) banner.classList.remove('show');
-  }
-
-  if (getConsent() === 'accepted') {
-    loadFacebookIframes();
-  } else if (getConsent() !== 'declined') {
-    showBanner();
-  }
-
-  var acceptBtn = document.getElementById('cookieAccept');
-  var declineBtn = document.getElementById('cookieDecline');
-
-  if (acceptBtn) {
-    acceptBtn.addEventListener('click', function () {
-      setConsent('accepted');
-      hideBanner();
-      loadFacebookIframes();
-    });
-  }
-
-  if (declineBtn) {
-    declineBtn.addEventListener('click', function () {
-      setConsent('declined');
-      hideBanner();
-    });
-  }
 
   /* ---------- FORMSPREE SUBMIT ---------- */
   var form = document.getElementById('contactForm');

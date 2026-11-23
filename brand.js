@@ -8,13 +8,6 @@
       if (select) select.value = names[link.dataset.package] || '';
     });
   });
-  var reviewConsent = document.querySelector('.review-consent');
-  if (reviewConsent) reviewConsent.addEventListener('click', function () {
-    var accept = document.getElementById('cookieAccept');
-    if (accept) accept.click();
-    reviewConsent.textContent = en ? 'Facebook reviews enabled' : 'Facebook-vélemények engedélyezve';
-    reviewConsent.disabled = true;
-  });
   document.querySelectorAll('.film-launch').forEach(function (button) {
     button.addEventListener('click', function () {
       var frame = document.createElement('iframe');

@@ -3,7 +3,7 @@ const source=fs.readFileSync(__dirname+'/script.js','utf8');
 async function scenario(en,fetchResult){
  const status={textContent:'',className:''},button={disabled:false},estimate={value:'209000'};
  let handler,resets=0,requests=0;
- const form={action:'https://formspree.io/f/xrerwodr',dataset:{},querySelector:()=>button,addEventListener:(event,fn)=>{if(event==='submit')handler=fn;},reset:()=>{resets++;}};
+ const form={action:'https://formspree.io/f/xnpdodpr',dataset:{},querySelector:()=>button,addEventListener:(event,fn)=>{if(event==='submit')handler=fn;},reset:()=>{resets++;}};
  const nodes={contactForm:form,formStatus:status,'estimated-price':estimate};
  vm.runInNewContext(source,{document:{documentElement:{lang:en?'en':'hu'},querySelectorAll:()=>[],getElementById:id=>nodes[id]||null},localStorage:{getItem:()=> 'declined'},FormData:class {},fetch:async(url,options)=>{assert.equal(url,form.action);assert.equal(options.method,'POST');requests++;return fetchResult();}});
  handler({preventDefault(){}});

@@ -125,7 +125,7 @@
             form.reset();
             if (status) {
               status.textContent =
-                en ? 'Thank you, your enquiry has been received. I’ll be in touch.' : 'Köszönöm, az ajánlatkérés megérkezett. Hamarosan jelentkezem.';
+                en ? 'Thank you, your enquiry has been submitted. I’ll be in touch.' : 'Köszönöm, az ajánlatkérést elküldtétek. Hamarosan jelentkezem.';
               status.className = 'form-status success';
             }
           } else {
@@ -140,8 +140,8 @@
         .catch(function (err) {
           if (status) {
             status.textContent = en ?
-              'We could not confirm delivery. Your details are still here; please try again or email eronnvideo@gmail.com.' :
-              'A kézbesítést nem sikerült visszaigazolni. Az adataitok megmaradtak; próbáljátok újra, vagy írjatok ide: eronnvideo@gmail.com.';
+              'We could not confirm delivery. Your details are still here; please try again or email padanyifilm@gmail.com.' :
+              'A kézbesítést nem sikerült visszaigazolni. Az adataitok megmaradtak; próbáljátok újra, vagy írjatok ide: padanyifilm@gmail.com.';
             status.className = 'form-status error';
           }
         })

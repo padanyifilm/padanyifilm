@@ -97,3 +97,13 @@ body{background:radial-gradient(ellipse at 95% 5%,#c6dace 0,transparent 32%),rad
 @media(min-width:1101px){.review-quote-card:nth-child(6n+2){background:linear-gradient(145deg,#f9fcf7ed,#dce9dba6)}}
 @media(max-width:1100px){.reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.reviews-section{padding:0 20px 40px}.reviews-grid{grid-template-columns:minmax(0,1fr);gap:16px}.reviews-intro{margin-top:12px}.review-quote-card{padding:22px 24px 18px;border-radius:22px}.review-quote-mark{font-size:54px;height:28px}.review-quote-card blockquote{margin:14px 0 20px}.review-quote-card blockquote p{font-size:24px;line-height:1.35}.review-quote-card figcaption{padding-top:14px;gap:2px}}
+
+/* Time-limited booking offer, through 15 December 2026. */
+.booking-offer{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 14px;max-width:100%;margin-bottom:24px;padding:12px 18px;border:1px solid #a7bba8;border-radius:18px;background:linear-gradient(135deg,#ffffffd9,#dfeadbc9);box-shadow:0 8px 24px -20px #34573a66;color:#34513d;font-size:12px;line-height:1.6;letter-spacing:1px}
+.booking-offer span{font-weight:600}
+.price-original{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;margin-bottom:10px;font-size:14px;line-height:1.6;color:#62675f}
+.price-original s{font-size:20px;text-decoration-thickness:1px;text-decoration-color:#59634c}
+.price-discount .price-label{color:#34513d;font-size:14px;margin-bottom:4px}
+.booking-offer-terms{max-width:880px;margin:28px auto 0;padding:18px 24px;text-align:center;border:1px solid #ffffffd9;border-radius:20px;background:#edf3eac9;font-size:16px;line-height:1.7;color:#405246}
+.booking-offer-terms strong{font-weight:600;color:#253d2d}
+@media(max-width:760px){.booking-offer{padding:10px 14px;font-size:11px;letter-spacing:.8px;gap:2px 10px;margin-bottom:22px}.booking-offer-terms{padding:18px;margin-top:22px;font-size:15px}.price-original{margin-bottom:8px}}
